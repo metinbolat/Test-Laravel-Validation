@@ -9,10 +9,18 @@
     Title:
     <br />
     <input type="text" name="title" class="@error('title') is-invalid @enderror" />
-    <br /><br />
+    <br />
+    @error('name')
+    {{ $message }}
+    @enderror
+    <br />
     Description:
     <br />
     <input type="text" name="description" class="@error('description') is-invalid @enderror" />
-    <br /><br />
+    <br />
+    @error('description')
+    {{ $message }}
+    @enderror
+    <br />
     <button type="submit">Save</button>
 </form>
