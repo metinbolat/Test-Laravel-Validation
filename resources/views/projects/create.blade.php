@@ -8,9 +8,9 @@
     @csrf
     Title:
     <br />
-    <input type="text" name="title" class="@error('title') is-invalid @enderror" />
+    <input type="text" name="name" class="@error('title') is-invalid @enderror" />
     <br />
-    @error('title') {{$message}} @enderror
+    @error('name') {{$message}} @enderror
     <br />
     Description:
     <br />
